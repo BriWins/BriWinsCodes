@@ -6,44 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BriWins || About</title>
     <meta name="description" content="Hello, my name is Brianna Winston and I'm a certified full-stack developer located in Houston, Texas.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/styles.css">
 </head>
 <body>
     
-      <!-- Nav Section-->
-  <header class="page-header">   
-    <img class="logo-pic page-header__item" src="http://via.placeholder.com/200x70" alt="Personal logo of Brianna Winston, a text logo in uppercase letters that consists of initials" >
-
-<nav class="main-navigation page-header__item">
-  <ul role="menubar" class="navigation-list">
-    <li role="presentation">
-      <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
-    </li>
-    <li role="presentation">
-      <a href="about.html" role="menuitem" class="navigation-list__item">About</a>
-    </li>
-    <li role="presentation">
-      <a href="skills.html" role="menuitem" class="navigation-list__item">Skills</a>
-    </li>
-    <li role="presentation">
-      <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
-    </li>
-  </ul>
+<!-- Nav Section-->
+<nav class="navbar navbar-expand-lg bg-secondary">
+  <div class="container-fluid">
+    <a class="navbar-brand mb-0 h1" href="index.html">BW</a>
+      <ul class="nav justify-content-end">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="skills.html">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
+  </div>
 </nav>
-</header>
 
-    <h1>About</h1>
+    <h1 class="about_header fs-1 text-center align-middle">About Bri</h1>
 
-    <p>This page is about myself. This is what I enjoy doing:</p>
-    <ul>
-      <li>Front-end development</li>
-      <li>Back-end development</li>
-      <li>Test driven development</li>
-      <li>Climbing</li>
-    </ul>
+    <div class="p-2 w-100">
+    <p class="text-break float-left">I have a customer service and administrative background. My latest experience involved being a frontline worker during the pandemic. In July 2020, I joined the City of Houston as a registration specialist assisting clients in getting registered for Covid-19 testing. Later, I upgraded to a specimen handler administering nasal swabs for the Houston community.
+    Aside from hearing countless tragedies of death and near-death experiences from clients, the job entailed a lot of technical issues which frustrated the clients and us the workers. I began wondering about the system's backend issues. I realized I had an interest in computer science and began my studies at South Texas College in pursuit of my associate's degree.</p>
 
-    <a href="files/cv.pdf" class="button" download target="_blank">Download my CV</a>
+    <p>Prior to the pandemic, I barely made ends meet and the pandemic just compounded my financial struggles. I began thinking how could I enter the workforce sooner and set myself apart from my peers. Also, I knew that once I graduated from college, competition was going to be fierce. I began doing research and web development sparked my interest. I temporarily put my associate's degree on hold and and enrolled in CareerFoundry's full-stack development course. </p>
+
+    <!-- <p>My customer background forces me to build sites with a customer-centric approach. Within the next five years, I hope to have so much knowledge in web development and connect dots. I get a thrill off of it. Also, I will be finishing college and expanding my programming skills.</p> -->
+
+    <p> One of the most satisfying parts of web development for me has been becoming a true steward of my future. My plan includes becoming more of a leader and gain concise, creative coding skills. </p>
+</div>
+<div class="position-relative">
+<img src="./Images/Covid_Pic.jpg" class="img_covid-pic top-0 end-0" alt="A picture of Brianna as a Coronavirus worker">
+</div>
+    <!-- <a href="files/cv.pdf" class="button" download target="_blank">Download my CV</a> -->
 
  <!-- Footer Section-->
  <footer class="footer">
@@ -61,6 +66,8 @@
       </div>
   </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
 <script src="JS/tota11y.min.js"></script>  
 </body>
 </html>

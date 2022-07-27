@@ -6,113 +6,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BriWins || Projects</title>
     <meta name="description" content="Hello, my name is Brianna Winston and I'm a certified full-stack developer located in Houston, Texas.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/styles.css">
 </head>
 <body>
     
-  <!-- Nav Section-->
-  <header class="page-header">   
-    <img class="logo-pic page-header__item" src="http://via.placeholder.com/200x70" alt="Personal logo of Brianna Winston, a text logo in uppercase letters that consists of initials" >
-
-<nav class="main-navigation page-header__item">
-  <ul role="menubar" class="navigation-list">
-    <li role="presentation">
-      <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
-    </li>
-    <li role="presentation">
-      <a href="about.html" role="menuitem" class="navigation-list__item">About</a>
-    </li>
-    <li role="presentation">
-      <a href="skills.html" role="menuitem" class="navigation-list__item">Skills</a>
-    </li>
-    <li role="presentation">
-      <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
-    </li>
-  </ul>
+<!-- Nav Section-->
+<nav class="navbar navbar-expand-lg bg-secondary">
+  <div class="container-fluid">
+    <a class="navbar-brand mb-0 h1" href="index.html">BW</a>
+      <ul class="nav justify-content-end">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="skills.html">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
+  </div>
 </nav>
-</header>
 
 <!-- Main content -->
-<section>
-    <h1>Work</h1>
-    <div class="grid">
-        <div class="grid__item">
-            <h2>Webpage Portfolio</h2>
-            <p>
-               My webpage portfolio was my first project in web development. As part of CareerFoundry's curriculum, this website is responsively built from scratch using pure HTML and CSS. 
-            </p>
-            <a href="#">See project on GitHub</a>
-         </div>
 
-         <div class="grid__item">
-            <h2>Pokèdex App</h2>
-            <p>
-              This project is a small web application built with HTML, CSS, and JavaScript that loads data from an external API and enables the view of data points in detail. 
-            </p>
-            <a href="https://github.com/BriWins/mypokedexapp.git" target="_blank">See project on GitHub</a>
-         </div>
+<h1 class="fs-1 text-center align-middle">Projects!</h1>
+<div class="d-flex justify-content-between">
+<div class="card" style="width: 18rem;">
+  <div class="card-body text-center">
+    <h5 class="card-title">Webpage Portfolio</h5>
+      <p class="card-text">  My webpage portfolio was my first project in web development.  As part of CareerFoundry's curriculum, this website is responsively built from scratch using pure HTML and CSS. </p>
+      <a href="https://github.com/BriWins/BriWinsCodes.git" target="_blank">See project on GitHub</a>
+  </div>
+</div>
 
-         <div class="grid__item">
-            <h2>Flix It Up</h2>
-            <p>
-            Flix It Up is a server-side componet of a "movies" web application. The web application provides users with access to different information about movies, directors, and genres. Users can sign up, update their personal information, and create a list of their favorite movies. 
-            </p>
-            <a href="hhttps://github.com/BriWins/MyFlix.git" target="_blank">See project on GitHub</a>
-         </div>
+<div class="card" style="width: 18rem;">
+  <div class="card-body text-center">
+    <h5 class="card-title">Pokèdex App</h5>
+      <p class="card-text">
+      This project is a small web application built with HTML, CSS, and JavaScript that loads data from an external API and enables the view of data points in detail. 
+      </p>
+      <a href="https://github.com/BriWins/mypokedexapp.git" target="_blank">See project on GitHub</a>
+  </div>
+</div>
 
-         <div class="grid__item">
-            <h2>Flix It Up React App</h2>
-            <p>
-               Within this project, I built the client-side for Flix It UP app based on its previously-defined REST API endpoints.
-            </p>
-            <a href="https://github.com/BriWins/myFlix-client2.git" target="_blank">See project on GitHub</a>
-         </div>
+<div class="card" style="width: 18rem;">
+  <div class="card-body text-center">
+    <h5 class="card-title">Flix It Up</h5>
+      <p class="card-text">
+      Flix It Up is a server-side componet of a "movies" web application. The web application provides users with access to different information about movies, directors, and genres. Users can sign up, update their personal information, and create a list of their favorite movies. 
+      </p>
+      <a href="https://github.com/BriWins/myFlix-client2.git" target="_blank">See project on GitHub</a>
+  </div>
+</div>
 
-         <div class="grid__item">
-            <h2>Meet Up</h2>
-            <p>
-               Meet App is a serverless, progressive web application (PWA) with React using a test-driven development (TDD) technique. The application uses the Google Calendar API to fetch upcoming events.
-            </p>
-            <a href="https://github.com/BriWins/meet-app.git" target="_blank">See project on GitHub</a>
-         </div>
+<div class="card" style="width: 18rem;">
+  <div class="card-body text-center">
+    <h5 class="card-title">Meet App</h5>
+      <p class="card-text">
+      Meet App is a serverless, progressive web application (PWA) with React using a test-driven development (TDD) technique. The application uses the Google Calendar API to fetch upcoming events.
+      </p>
+      <a href="https://github.com/BriWins/meet-app.git" target="_blank">See project on GitHub</a>
+  </div>
+</div>
 
-         <div class="grid__item">
-            <h2>Basic To Do List App</h2>
-            <p>
-               This To Do List app is built using JavaScript and styled with CSS. 
-            </p>
-            <a href="https://github.com/BriWins/to-do-list-app.git" target="_blank">See project on GitHub</a>
-         </div>
-    </div>
- </section>
-
-  <!-- <table>
-    <thead>
-      <tr>
-        <th>Skills</th>
-        <th>Years of Experience</th>
-        <th>Level of Expertise</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>HTML</td>
-        <td>3</td>
-        <td>Advanced</td>
-      </tr>
-      <tr>
-        <td>CSS</td>
-        <td>2</td>
-        <td>Intermediate</td>
-      </tr>
-      <tr>
-        <td>JavaScript</td>
-        <td>1</td>
-        <td>Beginner</td>
-      </tr>
-    </tbody>
-</table> -->
+</div>
 
  <!-- Footer Section-->
  <footer class="footer">
@@ -130,6 +93,8 @@
       </div>
   </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
 <script src="JS/tota11y.min.js"></script>  
 </body>
 </html>

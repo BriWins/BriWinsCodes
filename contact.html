@@ -6,47 +6,136 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BriWins || Contact</title>
     <meta name="description" content="Hello, my name is Brianna Winston and I'm a certified full-stack developer located in Houston, Texas.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/styles.css">
 </head>
 <body>
 
-  <!-- Nav Section-->
-  <header class="page-header">   
-    <img class="logo-pic page-header__item" src="http://via.placeholder.com/200x70" alt="Personal logo of Brianna Winston, a text logo in uppercase letters that consists of initials" >
-
-<nav class="main-navigation page-header__item">
-  <ul role="menubar" class="navigation-list">
-    <li role="presentation">
-      <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
-    </li>
-    <li role="presentation">
-      <a href="about.html" role="menuitem" class="navigation-list__item">About</a>
-    </li>
-    <li role="presentation">
-      <a href="skills.html" role="menuitem" class="navigation-list__item">Skills</a>
-    </li>
-    <li role="presentation">
-      <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
-    </li>
-  </ul>
+<!-- Nav Section-->
+<nav class="navbar navbar-expand-lg bg-secondary">
+  <div class="container-fluid">
+    <a class="navbar-brand mb-0 h1" href="index.html">BW</a>
+      <ul class="nav justify-content-end">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="skills.html">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
+  </div>
 </nav>
-</header>
 
-    <main>
-        <form action="" method="post" id="contact-form">
-            <label class="standard-label" for="contact-email">Email: </label>
-            <input type="email" id="contact-email" required>
+<h1>Would you like to work with me? I am available for a full-time, remote position. Also, I am open to any office positions within Spring, Texas. My contact information is listed below.</h1>
+
+<div class="container">
+  <form action="bw03446@gmail.com" method="post">
+    <h2>Contact Me!</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="first">First Name</label>
+          <input type="text" class="form-control" placeholder="" id="first">
+        </div>
+      </div>
+      <!--  col-md-6   -->
+
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="last">Last Name</label>
+          <input type="text" class="form-control" placeholder="" id="last">
+        </div>
+      </div>
+      <!--  col-md-6   -->
+    </div>
+
+
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="company">Company</label>
+          <input type="text" class="form-control" placeholder="" id="company">
+        </div>
+
+
+      </div>
+      <!--  col-md-6   -->
+
+      <div class="col-md-6">
+
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" class="form-control" id="phone" placeholder="phone">
+        </div>
+      </div>
+      <!--  col-md-6   -->
+    </div>
+    <!--  row   -->
+
+
+    <div class="row">
+      <div class="col-md-6">
+
+        <div class="form-group">
+          <label for="email">Email address</label>
+          <input type="email" class="form-control" id="email" placeholder="email">
+        </div>
+      </div>
+      <!--  col-md-6   -->
+
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="url">Your Website <small>Please include http://</small></label>
+          <input type="url" class="form-control" id="url" placeholder="url">
+        </div>
+
+      </div>
+      <!--  col-md-6   -->
+    </div>
+    <!--  row   -->
+
+
+    <label for="contact-preference">When is the best time of day to reach you?</label>
+    <div class="radio">
+      <label>
+        <input type="radio" name="contact-preference" id="contact-preference" value="am" checked>Morning
+      </label>
+    </div>
+    <div class="radio">
+      <label>
+        <input type="radio" name="contact-preference" id="contact-preference" value="pm" checked>Evening
+      </label>
+    </div>    
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+<!-- 
+          <form action="bw03446@gmail.com" method="post">
+
+          <label for="first_name">First name:</label>
+          <input id="first_name" type="text" />
           
-            <label class="standard-label" for="contact-phone">Telephone: </label>
-            <input type="tel" id="contact-phone" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
-          
-            <label class="standard-label" for="contact-message">Message: </label>
-            <textarea required id="contact-message" maxlength="240"></textarea>
-            <input type="submit" value="Send message">
-          </form>
-    </main>
+          <label for="last_name">Last name:</label>
+          <input id="last_name" type="text" />
+
+          <label class="standard-label" for="contact-email">Email: </label>
+          <input type="email" id="contact-email" required>
         
+          <label class="standard-label" for="contact-phone">Telephone: </label>
+          <input type="tel" id="contact-phone" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
+        
+          <label class="standard-label" for="contact-message">Message: </label>
+          <textarea maxlength="240"></textarea>
+          <input type="submit" value="Send message">
+          </form> -->
+   
  <!-- Footer Section-->
  <footer class="footer">
     <p>Find me on</p>
@@ -63,6 +152,8 @@
       </div>
   </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
 <script src="JS/tota11y.min.js"></script>  
 </body>
 </html>
